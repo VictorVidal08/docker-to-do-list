@@ -1,6 +1,6 @@
 FROM node:14-alpine
-WORKDIR /app
+WORKDIR /
 EXPOSE 3000
-ADD node_modules.tar.gz .
 COPY . .
+ADD node_modules.tar.gz .
 ENTRYPOINT [ "npm", "start" ]
